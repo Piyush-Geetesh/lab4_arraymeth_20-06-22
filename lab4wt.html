@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="arr"></select>
+    <br /><br />
+
+    <button onclick="my_Fun();">click here</button>
+
+    <script>
+      var select = document.getElementById("arr");
+      var elmts = ["HTML", "CSS", "JS", "PHP", "jQuery"];
+      //const lang = ["HTML", "CSS", "JS", "PHP", "jQuery"];
+      document.getElementById("arr").innerHTML = lang;
+      // Main function
+      function my_Fun() {
+        for (var i = 0; i < elmts.length; i++) {
+          var optn = elmts[i];
+          var el = document.createElement("option");
+          el.textContent = optn;
+          //el.value = optn;
+          select.appendChild(el);
+          lang.push(e1);
+        }
+        document.getElementById("arr").innerHTML = lang;
+      }
+    </script>
+  </body>
+</html>
